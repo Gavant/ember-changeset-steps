@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.1.0
+## v0.1.1
+
+Adding `ember-cli-shims`
+
+## v0.0.0
 
 -   Hold Your Horses,
 -   Pack Your Parachutes,
