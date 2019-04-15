@@ -1,3 +1,20 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<Steps as |Manager|>
+    <Manager.progress />
+    <Manager.step @name="Cool Step">
+        {{input value=this.changeset1.name placeholder="Name"}}
+        <button onclick={{execute-changeset this.changeset1 then=(action Manager.transition-to-next)}}>
+            Next Step
+        </button>
+    </Manager.step>
+    <Manager.step @name="Cooler Step">
+        {{input value=this.changeset2.name placeholder="Name"}}
+        <button onclick={{action Manager.transition-to-previous}}>
+            Previous Step
+        </button>
+        <button onclick={{execute-changeset this.changeset2 then=(action this.finish)}}>
+            Finish
+        </button>
+    </Manager.step>
+</Steps>
