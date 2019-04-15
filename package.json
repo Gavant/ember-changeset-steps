@@ -1,6 +1,6 @@
 {
     "name": "ember-changeset-steps",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Steps/Wizard with ember-changeset integration",
     "keywords": [
         "ember-addon",

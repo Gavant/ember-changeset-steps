@@ -1,9 +1,8 @@
-Changelog
-=========
+# Changelog
 
-## 0.0.0
+## 0.1.0
 
-- Hold Your Horses,
-- Pack Your Parachutes,
-- We're Coming,
-- But we haven't released anything yet.
+-   Hold Your Horses,
+-   Pack Your Parachutes,
+-   We're Coming,
+-   But we haven't released anything yet.
