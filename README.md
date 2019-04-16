@@ -8,8 +8,8 @@ This addon uses `ember-steps` to give step/wizard functionality using `ember-cha
 
 ## Compatibility
 
--   Ember.js v3.4 or above
--   Ember CLI v3.4 or above
+-   Ember.js v3.6 or above
+-   Ember CLI v3.6 or above
 
 ## Installation
 
