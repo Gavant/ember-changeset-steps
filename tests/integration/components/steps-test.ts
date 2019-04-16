@@ -11,11 +11,13 @@ module('Integration | Component | steps', function(hooks) {
         // Handle any actions with this.set('myAction', function(val) { ... });
 
         await render(hbs`
-            {{#steps}}
-                template block text
+            {{#steps as |manager|}}
+                {{#manager.step}}
+                    Test
+                {{/manager.step}}
             {{/steps}}
         `);
         let element = this.element.textContent;
-        assert.equal(element && element.trim(), '');
+        assert.equal(element && element.trim(), 'Test');
     });
 });
