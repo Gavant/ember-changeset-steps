@@ -1,5 +1,5 @@
 {{#each @manager.transitions.stepTransitions as |step index|}}
-    <div class="wizard-stepper-step {{if step.isActive 'active' 'inactive'}} {{if (gt @manager.transitions.currentStepIndex index) 'completed' 'incomplete'}}">
+    <div class="wizard-stepper-step {{if step.isActive "active" "inactive"}} {{if (gt @manager.transitions.currentStepIndex index) "completed" "incomplete"}}">
         <div class="wizard-stepper-step-badge-container">
             <div class="wizard-stepper-step-badge">
                 {{#if hasBlock}}

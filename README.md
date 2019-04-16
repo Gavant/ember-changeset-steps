@@ -1,11 +1,15 @@
+[![Build Status](https://travis-ci.org/Gavant/ember-changeset-steps.svg?branch=master)](https://travis-ci.org/Gavant/ember-changeset-steps)
+[![npm version](https://badge.fury.io/js/ember-changeset-steps.svg)](https://badge.fury.io/js/ember-changeset-steps)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-changeset-steps.svg)](http://emberobserver.com/addons/ember-changeset-steps)
+
 # ember-changeset-steps
 
 This addon uses `ember-steps` to give step/wizard functionality using `ember-changeset` & `ember-changeset-validation`.
 
 ## Compatibility
 
--   Ember.js v2.18 or above
--   Ember CLI v2.13 or above
+-   Ember.js v3.6 or above
+-   Ember CLI v3.6 or above
 
 ## Installation
 
