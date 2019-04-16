@@ -10,17 +10,12 @@ module('Integration | Component | steps', function(hooks) {
         // Set any properties with this.set('myProperty', 'value');
         // Handle any actions with this.set('myAction', function(val) { ... });
 
-        await render(hbs`{{steps}}`);
+        await render(hbs`
+            {{#steps}}
+                template block text
+            {{/steps}}
+        `);
         let element = this.element.textContent;
         assert.equal(element && element.trim(), '');
-
-        // Template block usage:
-        await render(hbs`
-      {{#steps}}
-        template block text
-      {{/steps}}
-    `);
-        element = this.element.textContent;
-        assert.equal(element && element.trim(), 'template block text');
     });
 });
