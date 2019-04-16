@@ -19,7 +19,7 @@ module('Integration | Component | steps', function(hooks) {
           {{/w.step}}
         {{/steps}}
       `);
-
-        assert.dom('[data-test-second]').doesNotExist();
+        const Assert = assert as assert;
+        Assert.dom('[data-test-second]').doesNotExist();
     });
 });
