@@ -6,14 +6,20 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | steps', function(hooks) {
     setupRenderingTest(hooks);
 
-    test('it renders', async function(assert) {
+    test('`currentStep` attribute', async function(assert) {
+        this.set('step', 'first');
         // Template block usage:
         await render(hbs`
-      {{#steps}}
-        template block text
-      {{/steps}}
-    `);
-        const element = this.element.textContent;
-        assert.equal(element && element.trim(), 'template block text');
+        {{#steps currentStep=first as |w|}}
+          {{#w.step name='first'}}
+            <div data-test-first></div>
+          {{/w.step}}
+          {{#w.step name='second'}}
+            <div data-test-second></div>
+          {{/w.step}}
+        {{/steps}}
+      `);
+
+        assert.dom('[data-test-second]').doesNotExist();
     });
 });
