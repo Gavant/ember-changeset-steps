@@ -1,6 +1,10 @@
 # Changelog
 
-## v0.1.1
+## v0.1.2
+
+### Pull Requests
+
+-   [#1](https://github.com/Gavant/ember-changeset-steps/pull/1) LGTM _by [Gavant](https://github.com/Gavant)_
 
 Adding `ember-cli-shims`
 
