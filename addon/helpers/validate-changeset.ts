@@ -1,14 +1,14 @@
 import { helper } from '@ember/component/helper';
 import { reject, resolve } from 'rsvp';
 
-export function validateChangeset([parameters]: any) {
-    const { changeset, transition } = parameters;
+export function validateChangeset([changeset]: any, options: any) {
+    const { then } = options;
     return function() {
         return changeset.validate().then(() => {
             if (changeset.isInvalid) {
                 return reject();
             } else {
-                return resolve(transition());
+                return resolve(then());
             }
         });
     };

@@ -6,12 +6,11 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Helper | inc', function(hooks) {
     setupRenderingTest(hooks);
 
-    // Replace this with your real tests.
-    test('it renders', async function(assert) {
-        this.set('inputValue', '1234');
+    test('Increment works', async function(assert) {
+        this.set('inputValue', 1);
 
         await render(hbs`{{inc inputValue}}`);
         let element = this.element.textContent;
-        assert.equal(element && element.trim(), '1234');
+        assert.equal(element && element.trim(), '2');
     });
 });

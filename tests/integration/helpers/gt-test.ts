@@ -6,12 +6,12 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Helper | gt', function(hooks) {
     setupRenderingTest(hooks);
 
-    // Replace this with your real tests.
-    test('it renders', async function(assert) {
-        this.set('inputValue', '1234');
+    test('Greater than returns correctly', async function(assert) {
+        this.set('inputValue', 1);
+        this.set('inputValue2', 2);
 
-        await render(hbs`{{gt inputValue}}`);
+        await render(hbs`{{gt inputValue inputValue2}}`);
         let element = this.element.textContent;
-        assert.equal(element && element.trim(), '1234');
+        assert.equal(element && element.trim(), 'false');
     });
 });

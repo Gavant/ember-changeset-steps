@@ -1,8 +1,8 @@
 import { helper } from '@ember/component/helper';
 import { reject } from 'rsvp';
 
-export function saveChangeset([parameters]: any) {
-    const { changeset, then } = parameters;
+export function saveChangeset([changeset]: any, options: any) {
+    const { then } = options;
     return function() {
         return changeset.validate().then(() => {
             if (changeset.isInvalid) {
