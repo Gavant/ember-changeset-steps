@@ -14,7 +14,7 @@ This addon uses `ember-steps` to give step/wizard functionality using `ember-cha
 ## Installation
 
 ```
-ember install ember-changeset-steps
+ember install @gavant/ember-changeset-steps
 ```
 
 ## Usage

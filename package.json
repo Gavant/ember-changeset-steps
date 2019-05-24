@@ -1,5 +1,5 @@
 {
-  "name": "ember-changeset-steps",
+  "name": "@gavant/ember-changeset-steps",
   "version": "0.1.2",
   "description": "Steps/Wizard with ember-changeset integration",
   "keywords": [
