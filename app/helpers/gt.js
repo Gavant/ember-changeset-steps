@@ -1,1 +1,1 @@
-export { default, gt } from 'ember-changeset-steps/helpers/gt';
+export { default, gt } from '@gavant/ember-changeset-steps/helpers/gt';

@@ -1,1 +1,1 @@
-export { default, validateChangeset } from 'ember-changeset-steps/helpers/validate-changeset';
+export { default, validateChangeset } from '@gavant/ember-changeset-steps/helpers/validate-changeset';

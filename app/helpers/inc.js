@@ -1,1 +1,1 @@
-export { default, inc } from 'ember-changeset-steps/helpers/inc';
+export { default, inc } from '@gavant/ember-changeset-steps/helpers/inc';

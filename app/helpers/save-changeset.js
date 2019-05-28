@@ -1,1 +1,1 @@
-export { default, saveChangeset } from 'ember-changeset-steps/helpers/save-changeset';
+export { default, saveChangeset } from '@gavant/ember-changeset-steps/helpers/save-changeset';

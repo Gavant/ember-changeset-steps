@@ -23,10 +23,10 @@
         "paths": {
             "dummy/tests/*": ["tests/*"],
             "dummy/*": ["tests/dummy/app/*", "app/*"],
-            "ember-changeset-steps": ["addon"],
-            "ember-changeset-steps/*": ["addon/*"],
-            "ember-changeset-steps/test-support": ["addon-test-support"],
-            "ember-changeset-steps/test-support/*": ["addon-test-support/*"],
+            "@gavant/ember-changeset-steps": ["addon"],
+            "@gavant/ember-changeset-steps/*": ["addon/*"],
+            "@gavant/ember-changeset-steps/test-support": ["addon-test-support"],
+            "@gavant/ember-changeset-steps/test-support/*": ["addon-test-support/*"],
             "*": ["types/*"]
         }
     },

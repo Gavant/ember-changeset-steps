@@ -1,1 +1,1 @@
-export { default } from 'ember-changeset-steps/components/step-progress';
+export { default } from '@gavant/ember-changeset-steps/components/step-progress';

@@ -1,9 +1,9 @@
 import StepManager from 'ember-steps/components/step-manager';
 // @ts-ignore: Ignore import of compiled template
-import layout from 'ember-changeset-steps/templates/components/steps';
+import layout from '@gavant/ember-changeset-steps/templates/components/steps';
 import { getProperties, set } from '@ember/object';
 import { isPresent, isNone } from '@ember/utils';
-import LinearChangesetStateMachine from 'ember-changeset-steps/-private/state-machine/linear';
+import LinearChangesetStateMachine from '@gavant/ember-changeset-steps/-private/state-machine/linear';
 
 export default class Steps extends StepManager {
     layout = layout;
